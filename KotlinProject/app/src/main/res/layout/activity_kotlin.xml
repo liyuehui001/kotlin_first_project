@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_project_main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout style="@style/activity_login_relative">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            style="@style/activity_login_user_pass"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/kotlin_user_icon" />
+
+        <ImageView
+            android:id="@+id/iv_text_del"
+            android:layout_alignParentRight="true"
+            style="@style/activity_login_text_del"  />
+
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/iv_text_del"
+            android:layout_toRightOf="@id/iv_user"
+            android:background="@null"
+            android:hint="@string/user_name" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/activity_login_relative">
+        <ImageView
+            android:id="@+id/iv_pass"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/kotlin_user_icon"
+            style="@style/activity_login_user_pass"/>
+        <ImageView
+            android:id="@+id/iv_text_del_pass"
+            android:layout_alignParentRight="true"
+            style="@style/activity_login_text_del" />
+        <EditText
+            android:id="@+id/et_pass_word"
+            android:layout_centerVertical="true"
+            android:hint="@string/pass_word"
+            android:inputType="numberPassword"
+            android:background="@null"
+            android:layout_toLeftOf="@id/iv_text_del_pass"
+            android:layout_toRightOf="@id/iv_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/activity_login_remember_loginbtn">
+        <CheckBox
+            android:id="@+id/cb_remember_password"
+            android:text="记住密码"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/activity_login_remember_loginbtn">
+        <Button
+            android:id="@+id/btn_login"
+            android:background="@drawable/selector_btn_login"
+            android:text="登录"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
