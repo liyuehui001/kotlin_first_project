@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvReturn"
+        style="@style/TopActionBar"
+        android:padding="10dp"
+        android:layout_width="40dp"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvTitle"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        style="@style/TopActionBar"/>
+
+    <TextView
+        android:id="@+id/tvRightSecond"
+        android:layout_alignParentRight="true"
+        style="@style/TopActionBar" />
+    <TextView
+        android:id="@+id/tvRightFirst"
+        android:layout_toLeftOf="@id/tvRightSecond"
+        android:layout_toRightOf="@id/tvTitle"
+        style="@style/TopActionBar" />
+
+
+</RelativeLayout>

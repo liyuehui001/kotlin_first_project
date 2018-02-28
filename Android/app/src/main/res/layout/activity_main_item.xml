@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.myandroid.widget.TopActionBar
+        android:id="@+id/topActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title_title="主界面"
+        app:left_icon="@mipmap/return_back"
+        app:right_second_icon="@mipmap/return_back"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <ImageView
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/ivShowImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

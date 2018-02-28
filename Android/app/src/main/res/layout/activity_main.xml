@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_top_line"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <com.myandroid.widget.MainButtomItem
+            android:id="@+id/mbiMain"
+            android:layout_weight="1"
+            app:text_m="主界面"
+            app:imgBackground="@drawable/bg_main_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <com.myandroid.widget.MainButtomItem
+            android:id="@+id/mbiInfo"
+            android:layout_weight="1"
+            app:text_m="个人信息"
+            app:imgBackground="@drawable/bg_my_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <com.myandroid.widget.MainButtomItem
+            android:id="@+id/mbiMessage"
+            android:layout_weight="1"
+            app:text_m="留言"
+            app:imgBackground="@drawable/bg_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

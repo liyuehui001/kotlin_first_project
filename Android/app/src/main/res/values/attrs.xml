@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputFieldHaveDel">
+        <attr name="text" format="string"></attr>
+        <attr name="isPassword" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TopActionBar">
+        <attr name="title_title" format="string"/>
+        <attr name="left_icon" format="reference"/>
+        <attr name="right_first_icon" format="reference"/>
+        <attr name="right_second_icon" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MainButtomItem">
+        <attr name="imgBackground" format="reference"/>
+        <attr name="isHaveNews" format="boolean"/>
+        <attr name="text_m" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="LinearTextViewLayout">
+        <attr name="strTextDesc" format="string"></attr>
+    </declare-styleable>
+
+</resources>

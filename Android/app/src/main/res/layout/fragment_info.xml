@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.myandroid.widget.TopActionBar
+        android:id="@+id/topActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title_title="个人信息"
+        app:left_icon="@mipmap/return_back"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/ivHeadImage"
+                    android:scaleType="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+
+            <com.myandroid.widget.LinearTextViewLayout
+                android:id="@+id/userName"
+                app:strTextDesc="用户名："
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <com.myandroid.widget.LinearTextViewLayout
+                app:strTextDesc="注册时间："
+                android:id="@+id/registerTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <com.myandroid.widget.LinearTextViewLayout
+                app:strTextDesc="关注数量："
+                android:id="@+id/followNum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <com.myandroid.widget.LinearTextViewLayout
+                app:strTextDesc="粉丝数量："
+                android:id="@+id/fanNum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

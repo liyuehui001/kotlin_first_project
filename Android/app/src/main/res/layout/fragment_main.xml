@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.myandroid.widget.TopActionBar
+        android:id="@+id/topActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title_title="主界面"
+        app:left_icon="@mipmap/return_back"
+        app:right_second_icon="@mipmap/return_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bgBigIv"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/ic_launcher"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="-30dp"
+                android:layout_alignBottom="@id/bgBigIv"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvContent"
+                android:layout_below="@id/bgBigIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
